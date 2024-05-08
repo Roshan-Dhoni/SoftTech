@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>Tour Booking Form</h1>
+    <h2>Note: <sup>*</sup>Mandatory Fields</h2>
+    <hr>
+    <form>
+            <label>Full Name <sup>*</sup>:</label>
+            <br>
+            <input type="text" id="fname" name="fullname"/>
+            <br>
+            <br>
+            <label>Email Address <sup>*</sup>:</label>    
+            <br>
+            <input type="email" id="email" name="email"/>
+            <br>
+            <br>
+            <label>Select Tour Package <sup>*</sup>:</label>
+            <br>
+            <select name="tourpackage">
+                <option value="southindia">South India</option>
+                <option value="northindia">North India</option>
+                <option value="westindia">West India</option>
+                <option value="eastindia">East India</option>
+            </select>
+            <br>
+            <br>
+            <label>Arrival date <sup>*</sup>:</label>
+            <br>
+            <input type="date" id="date" name="adate">
+            <br>
+            <br>
+            <label>Number of Persons <sup>*</sup>:</label>
+            <br>
+            <input type="text" id="nop" name="persons">
+            <br>
+            <br>
+            <label>What would you want to avail? <sup>*</sup></label>
+            <br>
+            <input type="checkbox" id="Boarding" name="avail" value="Boarding">
+            <label>Boarding</label>
+            <br>
+            <input type="checkbox" id="Food" name="avail" value="Food">
+            <label>Food</label>
+            <br>
+            <input type="checkbox" id="Sight" name="avail" value="Sight">
+            <label>Sight Seeing</label>
+            <br>
+            <br>
+            <label>Terms and conditions <sup>*</sup></label>
+            <br>
+            <input type="radio" id="iagree" name="termsconditions" value="iagree">
+            <label>I agree</label>
+            <input type="radio" id="dagree" name="termsconditions" value="dagree">
+            <label>I disagree</label>
+            <br>
+            <br>
+            <input type="submit" value="BOOK NOW">
+    </form>
+</body>
+</html>
