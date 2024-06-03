@@ -1,0 +1,62 @@
+body {
+    background-color: rgb(248, 244, 244);
+}
+.main {
+    font-size: 72px;
+    font-style: normal;
+    font-weight: bolder;
+}
+.hori {
+    height: 2px;
+    background-color: black;
+}
+#para {
+    font-style: normal;
+}
+.family {
+     @import url('https://fonts.googleapis.com/css2?&family=Playfair+Display:ital,wght@0,400..900;1,400..900');
+     font-style: italic;
+}
+h3 {
+    text-align: center;
+}
+div {
+    text-align: center;
+    font-style: italic;
+}
+.two {
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 200px;
+}
+.three {
+    margin: 0px;
+    font-style: italic;
+    border-right: 1px solid black;
+    padding: 20px;
+    width: 225px;
+}
+.four {
+    margin: 0px;
+    border-right: 1px solid black;
+    padding: 20px;
+    width: 250px;
+}
+.five {
+    margin: 0px;
+    border-right: 1px solid black;
+    padding: 20px;
+    width: 270px;
+}
+.six {
+    margin: 0px;
+    border-right: 1px solid black;
+    padding: 20px;
+    width: 275px;
+}
+.seven {
+    margin: 0px;
+    padding: 20px;
+    width: 250px;
+}

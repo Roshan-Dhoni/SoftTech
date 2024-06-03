@@ -1,0 +1,41 @@
+.nav {
+    background-color: #483d8b;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+}
+.log {
+    display: flex;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 1px;
+    padding-left: 25px;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+.menu {
+    display: flex;  
+    padding-top: 10px;
+    padding-right: 25px;
+    text-indent: 15px;
+    color: white;
+}
+body {
+    background-color: #d3d3d3;
+}
+
+.bars {
+    display: none;
+}
+@media (max-width: 450px) {
+    .menu {
+        display: none;
+    }
+    .bars {
+        display: block;
+        padding-right: 25px;
+        padding-top: 10px;
+    }
+}

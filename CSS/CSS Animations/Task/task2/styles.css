@@ -1,0 +1,105 @@
+body {
+    background-color: #232323;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: 650px;
+    animation-name: body;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+h1 {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+.icons {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    opacity: 0.5;
+    column-gap: 70px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+.fb {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    animation-name: fb;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    transform: scale(1.5);
+    transition: 5s;
+    filter: blur();
+}
+.insta { 
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;  
+    animation-name: insta;
+    animation-duration: 3s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+    transform: scale(1.5);
+    transition: 5s;
+    filter: blur();
+}
+.yt {
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
+    border-radius: 50%;
+    animation-name: yt;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+    transform: scale(1.5);
+    transition: 5s;
+    filter: blur();
+}
+@keyframes body {
+    from {
+        border: 1px solid green; 
+    }
+    to {
+        border-color: transparent;       
+    }
+}
+@keyframes fb {
+        from {
+            box-shadow: 0px 0px 15px 10px blue;
+            color: blue;
+        }
+        to {
+            border-color: transparent;
+        }
+}
+@keyframes insta {
+    from {
+        box-shadow: 0px 0px 15px 10px #ff42c9;
+        color: #ff42c9;
+    }
+    to {
+        border-color: transparent;
+    }
+}
+@keyframes yt {
+    from {
+        box-shadow: 0px 0px 15px 10px red;
+        color: red;
+    }
+    to {
+        border-color: transparent;
+    }
+}

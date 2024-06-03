@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="bcimage">
+    <h1>Tour Booking Form</h1>
+    <h2>Note: <sup>*</sup> Mandatory Fields</h2>
+    <hr>
+    <form>
+        <label>Full Name <sup>*</sup>:</label>
+        <br>
+        <input type="text" name="fullname" id="fname">
+        <br>
+        <br>
+        <label>Email Address <sup>*</sup>:</label>
+        <br>
+        <input type="email" name="emailaddress" id="email">
+        <br>
+        <br>
+        <label>Select Tour Package <sup>*</sup>:</label>
+        <br>
+        <select name="tourpackage">
+            <option value="Select Package">Select Package</option>
+            <option value="southindia">South India</option>
+            <option value="northindia">North India</option>
+            <option value="westindia">West India</option>
+            <option value="eastindia">East India</option>
+        </select>
+        <br>
+        <br>
+        <label>Number of persons <sup>*</sup>:</label>
+        <br>
+        <input type="number" name="noofpersons" id="nop">
+        <br>
+        <br>
+        <label>Date <sup>*</sup>:</label>
+        <br>
+        <input type="date" name="date" id="da">
+        <br>
+        <br>
+        <label>What would you want to avail? <sup>*</sup></label>
+        <br>
+        <input type="checkbox" name="boarding" id="board">Boarding
+        <br>
+        <input type="checkbox" name="food" id="fod">Food
+        <br>
+        <input type="checkbox" name="sightsee" id="sightc">Sight seeing
+        <br>
+        <br>
+        <label>Terms and Conditions <sup>*</sup></label>
+        <br>
+        <input type="radio" name="iagree" id="ia">I Agree
+        <br>
+        <br>
+        <button>Book Now</button>
+    </form>
+    </div>
+</body>
+</html>

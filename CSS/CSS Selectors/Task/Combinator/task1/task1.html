@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div p {
+        background-color: yellow;
+        font-style: italic;
+    }
+    div + p {
+        color: blue;
+        background-color: purple;
+    }
+    div ~ p {
+        color: blue;
+    }
+</style>
+<body>
+    <h1>Child Selector</h1>
+    <p>The child selector (>) selects all elements that are the children of a specified element</p>
+    <div>
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <span><i>Paragraph 3 in the div (inside a section element).</i></span>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+</body>
+</html>

@@ -1,0 +1,30 @@
+.bcimage{    
+    background-image: url(file.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 95vh;
+}
+label {
+        font-weight: bold;
+    }
+h1 {
+        color: white;
+    }
+h2 {
+        color: red;
+    }
+button {
+        background-color: orangered;
+        color: white;
+        padding-left: 0.1%;
+        padding-top: 0.5%;
+        padding-bottom: 0.3%;
+        height: 25%;
+        width: 7%;
+        cursor: pointer;
+        border-radius: 4px;
+    }
+sup {
+        color: red;
+    }

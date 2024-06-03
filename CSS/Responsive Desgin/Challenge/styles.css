@@ -1,0 +1,349 @@
+body {
+    margin: 0px;
+}
+.head {
+    background-color: #131921;
+    color: white;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+.logo img{
+    width: 18vh;
+    height: 9vh;
+}
+.logo:hover{
+    cursor: pointer;
+    border: 1px white solid;
+}
+.loc:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.loc > p {
+    margin-bottom: 0px;
+    margin-left: 16px;
+    margin-top: 8px;
+    opacity: 0.8;
+    font-size: 12.8px;
+  }
+.location {
+    display: flex;
+    justify-content: center;
+}
+.location > span {
+    font-size: 16px;
+  }
+  
+  .location > p {
+    font-size: 16px;
+    margin: 2px 0;
+  }
+#searchSelect {
+    background-color: #e6e6e6;
+    border: 0px;
+    padding-left: 10px;
+    padding-right: 5px;
+    border-right: solid 5px transparent;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+  }
+  #searchSelect:hover {
+    cursor: pointer;
+    background-color: rgb(172, 166, 166);
+  }
+  #searchInput {
+    border: 0px;
+    width: 80%;
+    padding-left: 10px;
+  }
+  .searchBar {
+    display: flex;
+    padding-left: 8px;
+    width: 800px;
+    height: 40px;
+    padding-top: 10px;
+  }
+.icon {
+    padding-top: 10px;
+    padding-left: 15px;
+    text-align: center;
+    color: black;
+}
+#searchButton {
+    border: 0;
+    padding-right: 10px;
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background-color: #febd68;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 3px;
+    font-size: 36px;
+  }
+  #searchButton:hover {
+    cursor: pointer;
+    background-color: rgb(202, 151, 55);
+  }
+  #searchInput::placeholder {
+    padding-left: 8px;
+  }
+.searchicon:hover{
+    cursor: pointer;
+}
+.all select:hover {
+    cursor: pointer;
+}
+.signIn {
+    text-align: center;
+  }
+.signIn:hover {
+    cursor: pointer;
+    border: 1px white solid;
+}
+.orders {
+    text-align: center;
+}
+.orders:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.cart span {
+    font-size: 32px;
+    margin-top: 10px;
+}
+.cart span:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.head2 {
+    background-color: #232f3e;
+    color: white;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.nav > p {
+    padding: 4.8px 8px;
+    margin: 6.4px 0%;
+}
+.al {
+    padding-left: 5px;
+    padding-top: 5px;
+}
+#deals:hover, #service:hover, #register:hover, #card:hover, #sell:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.menu {
+    display: flex;
+    margin: 0.2rem 0.5rem;
+    padding: 0.2rem 0.5rem;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    margin-left: 20px;
+}
+.menu:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.list2 {
+    padding: 6.4px 8px;
+    margin: 6.4px 8px;
+    margin: 0;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.list2:hover {
+    cursor: pointer;
+    border: 1px solid white;
+}
+.offers {
+    cursor: pointer;
+}
+.offers img{
+    width: 100%;
+    height: 489px;
+}
+.main {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f3f3f3;
+    height: 430px;
+    padding-top: 50px;
+    padding-left: 25px;
+}
+.laptab {
+    width: 240px;
+    height: 350px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.laptab img{
+    width: 220px;
+    height: 250px;
+}
+.laptab img:hover, .watch img:hover, .light img:hover, .home img:hover {
+    cursor: pointer;
+}
+.shop {
+    font-size: 14px;
+    color: blue;
+}
+.shop:hover {
+    cursor: pointer;
+}
+.watch {
+    width: 240px;
+    height: 350px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.watch img{
+    width: 220px;
+    height: 250px;
+}
+.light {
+    width: 240px;
+    height: 350px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.light img{
+    width: 220px;
+    height: 250px;
+}
+.home {
+    width: 240px;
+    height: 350px;
+    background-color: white;
+    padding-top: 25px;
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.home img{
+    width: 220px;
+    height: 250px;
+}
+.top {
+    background-color: #37475a;
+    text-align: center;
+    height: 40px;
+    padding-top: 20px;
+}
+.top a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.foot {
+    background-color: #232f3e;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    height: 260px;
+} 
+.know, .connect, .make, .help {
+    line-height: 22px;
+}
+.know div:hover, .connect div:hover, .make div:hover, .help div:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+@media (max-width: 650px) {
+    .head {
+        width: 500px;
+    }
+    .logo img {
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    .loc, .para, .para2, .search, .orders, .list2, #searchSelect {
+        display: none;
+    }
+    #searchInput {
+        margin-left: 30px;
+        width: 50%;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+    }
+    .signIn {
+        text-wrap: nowrap;
+        margin-left: 0px;
+        padding-left: 0px;
+    }
+    .cart span{
+        display: flex;
+        padding-right: 10px;
+        padding-left: 30px;
+    }
+    .head2 {
+        width: 500px;
+        height: 50px;
+    }
+    .menu {
+        margin-right: 10px;        
+    }
+    #deals {
+        margin-right: 5px;
+    }
+    #service {
+        margin-left: 5px;
+    }
+    #card {
+        margin-left: 10px;
+    }
+    #sell {
+        padding-right: 45px;
+    }
+    .offers img{
+        width: 500px;
+        height: 200px;
+    }
+    .main {
+        width: 475px;
+        height: 1900px;
+        display: grid;
+        grid-template-columns: 1fr;
+        column-gap: 20px;
+    }
+    .top {
+        width: 500px;
+    }
+    .foot {
+        width: 500px;
+        height: 790px;
+        display: grid;
+        text-align: center;
+        grid-template-columns: 1fr;
+        line-height: 25px;
+    }
+    .laptab, .watch, .light, .home {
+        width: 430px;
+        height: 410px;
+    }
+    .laptab img, .watch img, .light img, .home img {
+        width: 400px;
+        height: 300px;
+    }
+}
