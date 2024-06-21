@@ -5,6 +5,10 @@ let resultId=document.getElementById("searchResult");
 // function to find the first position of vowel in a string
 function stringFunction() {
   let str=string.value;
+  if (!str) {
+    alert("Please enter a string.");
+    return;
+}
   let result=str.indexOf("o");
   document.getElementById("searchResult").value=result;
 }

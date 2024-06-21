@@ -6,6 +6,10 @@ let resultOutput1=document.getElementById("variableResultsId");
 
 //function to print variable actor names
 function printActorNames() {
+  if(!actorInput1.value || !actorInput2.value || !actorInput3.value){
+    alert("Enter the names in inputs using variables");
+    return;
+  }
   resultOutput1.innerHTML="";
   let actorname1=actorInput1.value;
   let actorname2=actorInput2.value;
@@ -29,6 +33,10 @@ function resetVariableInputs() {
 
 // function to print array actor names
 function printArrayActorNames() {
+  if(!actorNamesInput1.value || !actorNamesInput2.value || !actorNamesInput3.value){
+    alert("Enter the names in inputs using array");
+    return;
+  }
   resultOutput2.innerHTML="";
   let actorArrayNames=[
   actorName1=actorNamesInput1.value,

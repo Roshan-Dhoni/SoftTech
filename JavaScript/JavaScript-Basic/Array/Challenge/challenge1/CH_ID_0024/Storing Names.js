@@ -6,6 +6,10 @@ let resultOutput=document.getElementById("variableResultsId");
 
 //function to print the names
 function printNames() {
+  if(!actornameId1.value || !actornameId2.value || !actornameId3.value){
+    alert("Enter the name");
+    return;
+  }
   resultOutput.innerHTML="";
   let actorname1=actornameId1.value;
   let actorname2=actornameId2.value;

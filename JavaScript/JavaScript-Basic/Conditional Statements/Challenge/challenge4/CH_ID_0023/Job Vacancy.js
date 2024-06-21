@@ -26,7 +26,10 @@ let finalResult = document.getElementById("result")
 //Code Logic
 function findEligiblity() {
   let Degree=selectedDegree.value;
-
+  if (Degree === "") {
+    alert("Please select a degree.");
+    return;
+}
   if (
     Degree=="bca" || 
     Degree=="bscCs" ||
@@ -41,10 +44,11 @@ function findEligiblity() {
     Degree=="meIt"
   ) 
   {
-    finalResult.innerHTML="Eligible for Senior Software Developer";
+    finalResult.innerText="Eligible for Senior Software Developer";
   }
 }
 
 function reset() {
-  finalResult.innerHTML="";
+  selectedDegree.value = "";
+  finalResult.innerText="";
 }

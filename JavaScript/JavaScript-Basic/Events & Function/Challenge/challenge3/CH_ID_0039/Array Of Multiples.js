@@ -27,18 +27,23 @@ window.addEventListener("click", function (event) {
   if (event.target === successModal) successModal.classList.remove("active");
   if (event.target === errorModal) errorModal.classList.remove("active");
 });
-//variable declaration
-let firstNum=document.getElementById("firstNumber");
-let secondNum=document.getElementById("secondNumber");
-let result=document.getElementById("resultId");
+
 //Input declaration
 function calculate() {
-  for(let startValue = 1; startValue <= secondNum.value; startValue++) {
-    result.innerHTML += firstNum.value * startValue + " ";
+  let firstNum=parseInt(document.getElementById("firstNumber").value);
+  let secondNum=parseInt(document.getElementById("secondNumber").value);
+  let result=document.getElementById("resultId");
+  if(!firstNum || !secondNum){
+    alert("Number must be filled");
+    return;
+  }
+  result.innerHTML="";
+  for(let startValue = 1; startValue <= secondNum; startValue++) {
+    result.innerHTML += firstNum * startValue + " ";
   }
 }
 function reset() {
-  firstNum.value="";
-  secondNum.value="";
-  result.value="";
+  document.getElementById("firstNumber").value="";
+  document.getElementById("secondNumber").value="";
+  document.getElementById("resultId").innerHTML="";
 }

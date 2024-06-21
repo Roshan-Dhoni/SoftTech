@@ -35,13 +35,16 @@ let displayDate = new Date();
  function calculate() {
   let firstDomInput = document.getElementById("firstNumber");
   let secondDomInput = document.getElementById("secondNumber");
-  let firstNum = parseInt(firstDomInput.value);
-  let secondNum = parseInt(secondDomInput.value);
-  let totalNumber = firstNum % secondNum;
-  document.getElementById("resultId").value=totalNumber;
+  let firstNum=firstDomInput.valueAsNumber;
+  let secondNum=secondDomInput.valueAsNumber;
+  let totalNumber = (secondNum/100)*firstNum;
+  document.getElementById("resultId").valueAsNumber=totalNumber;
+  if(!firstNum || !secondNum){
+    alert("Number must be filled");
+  }
 }
  function result() {
-      document.getElementById("firstNumber").value=0;
-      document.getElementById("secondNumber").value=0;
-      document.getElementById("resultId").value=0;
+      document.getElementById("firstNumber").value="";
+      document.getElementById("secondNumber").value="";
+      document.getElementById("resultId").value="";
  }

@@ -14,6 +14,10 @@ let result=document.getElementById("resultId");
 //function to convert uppercase into lowercase and vice-versa
 function caseConversion() {
   let str=string.value;
+  if (!str) {
+    alert("Please enter a string.");
+    return;
+}
   for(let i=0;i<str.length;i++) {
     if(str[i]==str[i].toLowerCase()) {
       result.value+=str[i].toUpperCase();

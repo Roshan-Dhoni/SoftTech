@@ -34,6 +34,22 @@ function putFunction() {
   let rowValue = parseInt(rowValueId.value);
   let colValue = parseInt(colValueId.value);
   let putGoldValue = parseInt(putGoldId.value);
+  if ((!rowValue || rowValue < 0 || rowValue > 4) && (!colValue || colValue < 0 || colValue > 2)) {
+    alert("Please enter valid row and column number");
+    return;
+  }
+  if (!rowValue || rowValue < 0 || rowValue > 4) {
+    alert("Please enter a valid row number between 0 and 4.");
+    return;
+  }
+  if (!colValue || colValue < 0 || colValue > 2) {
+    alert("Please enter a valid column number between 0 and 2.");
+    return;
+  }
+  if (!putGoldValue || putGoldValue < 0) {
+    alert("Please enter a valid amount of gold.");
+    return;
+  }
   lockerArray[rowValue][colValue] = putGoldValue;
   getGoldId.value = "";
   displayValues();

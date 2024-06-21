@@ -86,7 +86,7 @@
                           </div>
                           <br />
                           <div class="main">
-                            <div><button id="buttonId">Add</button></div>
+                            <div><button id="buttonId" onclick="Add()">Add</button></div>
                           </div>
                         </div>
                       </div>
@@ -160,6 +160,19 @@
                         successModal.classList.remove("active");
                       if (event.target === errorModal) errorModal.classList.remove("active");
                     });
+                    function Add() {
+                      let firstNumberInput=document.getElementById("firstNumber");
+                      let secondNumberInput=document.getElementById("secondNumber");
+                      let thirdNumberInput=document.getElementById("thirdNumber");
+                      let firstNum=parseInt(firstNumberInput.value);
+                      let secondNum=parseInt(secondNumberInput.value);
+                      let thirdNum=parseInt(thirdNumberInput.value);
+                      let resultInput=firstNum+secondNum+thirdNum;
+                      document.getElementById("resultId").value=resultInput;
+                      if(!firstNum || !secondNum || !thirdNum){
+                        alert("Number must be filled");
+                      }
+                    }
                   </script>
                 </body>
               </html>

@@ -6,6 +6,10 @@ let resultOutput1=document.getElementById("variableResultsId");
 
 // function to print variable actor names
 function printActorNames() {
+  if(!actorInput1.value || !actorInput2.value || !actorInput3.value){
+    alert("Enter the names in inputs using variables");
+    return;
+  }
   resultOutput1.innerHTML="";
   let actorname1=actorInput1.value;
   let actorname2=actorInput2.value;
@@ -30,6 +34,10 @@ let numberOfActors=document.getElementById("numberOfActorsAdded");
 let actorsArray=[];
 let i=0;
 function addActorsName() {
+  if(!actorNamesInput.value){
+    alert("Enter the names");
+    return;
+  }
   actorsArray[i]=actorNamesInput.value;
   i++;
   numberOfActors.innerHTML=`No. of Actors added: ${i}`;
@@ -38,6 +46,10 @@ function addActorsName() {
 
 //function to print the array actor names
 function printArrayActorNames() {
+  if(i==0) {
+    alert("Please specify the no. of actors");
+    return;
+  }
   actorNameOutput.innerHTML="";
   for(let index=0;index<i;index++){
     actorNameOutput.innerHTML+=actorsArray[index]+"<br>";

@@ -13,6 +13,10 @@ function evaluvate() {
   let secondNumber = secondNumberId.value;
   let dropdown = dropdownId.value;
 
+  if (firstNumber == "" || secondNumber == "") {
+    alert("Please enter both first and second numbers.");
+    return;
+}
   switch (dropdown) {
     case "forLoop":
       for (initialize = firstNumber; initialize <= secondNumber; initialize++) {

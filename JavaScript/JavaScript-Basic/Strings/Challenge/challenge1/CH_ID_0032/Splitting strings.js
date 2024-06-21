@@ -4,7 +4,11 @@ let resultId=document.getElementById("searchResult");
 
 //function to split the string
 function stringFunction() {
-  let str=string.value;
+  let str = string.value;
+  if (!str) {
+    alert("Please enter a string.");
+    return;
+}
   let result=str.split('');
   document.getElementById("searchResult").innerHTML=result;
 }

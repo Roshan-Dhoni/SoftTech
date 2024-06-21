@@ -9,6 +9,10 @@ let reverseString=document.getElementById("reverseId");
 function stringFunction() {
   let str=string.value;
   let searchStr=searchString.value;
+  if (!str || !searchStr) {
+    alert("Please enter both a string and a search string.");
+    return;
+}
   let reverseStr="";
   let searchedStr=str.includes(searchStr);
   if(searchedStr==true) {

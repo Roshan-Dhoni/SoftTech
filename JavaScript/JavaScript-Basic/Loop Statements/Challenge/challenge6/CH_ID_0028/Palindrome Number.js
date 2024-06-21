@@ -15,6 +15,10 @@ function palindrome() {
     number,
     lastDigit;
 
+    if (!firstNumberValue || !secondNumberValue) {
+      alert("Please enter both first and second numbers.");
+      return;
+  }
   //clear output values in loop area if the particular loop is not selected
   forOutputArea.value = "";
   whileOutputArea.value = "";

@@ -15,6 +15,10 @@ function armstrong() {
     number,
     lastDigit;
 
+  if (!firstNumberId.value || !secondNumberId.value) {
+      alert("Please enter both the first and second numbers.");
+      return;
+  }
   //clear output values in loop area if the particular loop is not selected
   forOutputArea.value = "";
   whileOutputArea.value = "";

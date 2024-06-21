@@ -27,6 +27,10 @@ let Result=document.getElementById("resultId");
 
 function whileLoop(){
    // Code statements
+   if (!firstNumberId.value || !secondNumberId.value) {
+      alert("Please enter both numbers.");
+      return;
+  }
    let firstNumberValue=firstNumberId.value;
    let secondNumberValue=secondNumberId.value;
    let initialize=firstNumberValue;

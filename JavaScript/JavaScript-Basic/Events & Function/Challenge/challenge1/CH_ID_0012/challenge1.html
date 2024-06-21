@@ -82,8 +82,7 @@
                               onmouseover="mouseOver()"
                               onmouseout="mouseOut()"
                               onclick="displayMessage()"
-                            >
-                              Hover over the line to change the font color.
+                            >                            
                             </div>
                           </div>
                           <br />
@@ -130,47 +129,7 @@
                       </div>
                     </div>
                   </div>
-                  <script>
-                    //Date and Time declaration
-                    let displayDate = new Date();
-                    document.getElementById("dateOutput").innerHTML =
-                      displayDate.toLocaleDateString();
-                    document.getElementById("timeOutput").innerHTML =
-                      displayDate.toLocaleTimeString();
-              
-                    //copy to clipboard
-                    const copyText = document.querySelector("#copy");
-                    copyText.addEventListener("click", () => {
-                      navigator.clipboard.writeText(
-                        document.querySelector("#successCode").value
-                      );
-                      copyText.textContent = "copied";
-                      setTimeout(() => {
-                        copyText.innerHTML = `<span>&#128203; </span>copy`;
-                      }, 2000);
-                    });
-              
-                    //Modal
-                    const toggleSuccessModal = () => successModal.classList.toggle("active");
-                    const toggleErrorModal = () => errorModal.classList.toggle("active");
-                    window.addEventListener("click", function (event) {
-                      if (event.target === successModal)
-                        successModal.classList.remove("active");
-                      if (event.target === errorModal) errorModal.classList.remove("active");
-                    });
-              
-                    //Code Statements
-                    function calculate() {
-                        let firstDomInput = document.getElementById("firstNumber");
-                        let secondDomInput = document.getElementById("secondNumber");
-                        let firstNum = parseInt(firstDomInput.value);
-                        let secondNum = parseInt(secondDomInput.value);
-                        let totalNumber = firstNum + secondNum;
-                        document.getElementById("resultId").value=totalNumber;
-                    }
-                    let mouseChange=document.getElementById("onMouseOver");
-                    mouseChange.addEventListener("mouseover", function(){
-                    document.getElementById("onMouseOver").style.color="green"; })
+                  <script src="events.js">
                   </script>
                 </body>
               </html>
