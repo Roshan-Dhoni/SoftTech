@@ -33,10 +33,12 @@ function calculate() {
   let firstNum=parseInt(document.getElementById("firstNumber").value);
   let secondNum=parseInt(document.getElementById("secondNumber").value);
   let result=document.getElementById("resultId");
+  
   if(!firstNum || !secondNum){
     alert("Number must be filled");
     return;
   }
+  
   result.innerHTML="";
   for(let startValue = 1; startValue <= secondNum; startValue++) {
     result.innerHTML += firstNum * startValue + " ";
