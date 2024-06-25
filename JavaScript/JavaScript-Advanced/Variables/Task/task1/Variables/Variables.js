@@ -13,15 +13,16 @@
   document.getElementById("dateOutput").innerHTML = displayDate.toLocaleDateString();
   document.getElementById("timeOutput").innerHTML = displayDate.toLocaleTimeString();
   //Code Statements
-  var firstNumber=10;
-  let secondNumber=20;
-  const thirdNumber=30;
-  if(true) {
-    let Number1=50;
-    // document.getElementById("outputId").innerHTML="Addition of no.s inside function: ",firstNumber+secondNumber+thirdNumber);
+  //Global Scope Declalration
+  var firstNumber=5;
+  let secondNumber=5;
+  const thirdNumber=5; 
+  let outputMessage=document.getElementById("outputId");
+  //Local Scope Declaration
+  {
+    outputMessage.innerHTML+="Addition: "+(firstNumber+secondNumber+thirdNumber)+"<br>";
+    outputMessage.innerHTML+="Subtraction: "+(firstNumber-secondNumber-thirdNumber)+"<br>";
+    outputMessage.innerHTML+="Multiplication: "+(firstNumber*secondNumber*thirdNumber)+"<br>";
+    outputMessage.innerHTML+="Division: "+(firstNumber/secondNumber/thirdNumber)+"<br>"; 
   }
-  console.log(firstNumber+secondNumber+thirdNumber);
-  console.log(firstNumber-secondNumber-thirdNumber);
-  console.log(firstNumber*secondNumber*thirdNumber);
-  console.log(firstNumber/secondNumber/thirdNumber);
 

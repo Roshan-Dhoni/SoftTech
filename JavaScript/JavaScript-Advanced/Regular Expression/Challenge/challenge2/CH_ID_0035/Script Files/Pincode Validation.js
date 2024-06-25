@@ -30,8 +30,20 @@ copyText.addEventListener("click", () => {
 
 //Code Logic
 const pinInputId=document.getElementById("pinId");
+const resultId=document.getElementById("resultId");
 const pin=parseInt(pinInputId.value);
+const result=parseInt(resultId.value);
 function stringFunction(pin) {
   const pinPattern=/^(\d{4}|\d{6})$/;
   return pinPattern.test(pin);
+}
+if(stringFunction(result)) {
+  result.innerHTML="True";
+} else {
+  alert("Pin is Not Valid");
+}
+
+//function to reset the fields
+function reset() {
+  pinInputId.value="";
 }
