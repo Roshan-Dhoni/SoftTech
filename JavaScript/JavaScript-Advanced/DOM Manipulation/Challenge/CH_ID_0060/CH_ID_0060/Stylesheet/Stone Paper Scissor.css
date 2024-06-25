@@ -196,4 +196,18 @@ label {
 #ourChoices img{
     height:70px;
     width:70px;
-    background-color: #f2f3cb;}
+    background-color: #f2f3cb;
+}
+
+#reset {
+    width: 70px;
+    height: 32px;
+    background-color: rgba(177,177,240,0.842);
+    color: black;
+    border: none;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+#reset:hover {
+    background-color: rgba(58, 58, 221, 0.63);
+}

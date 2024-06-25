@@ -29,21 +29,22 @@ copyText.addEventListener("click", () => {
 });
 
 //Code Logic
-const pinInputId=document.getElementById("pinId");
-const resultId=document.getElementById("resultId");
-const pin=parseInt(pinInputId.value);
-const result=parseInt(resultId.value);
-function stringFunction(pin) {
-  const pinPattern=/^(\d{4}|\d{6})$/;
-  return pinPattern.test(pin);
-}
-if(stringFunction(result)) {
-  result.innerHTML="True";
-} else {
-  alert("Pin is Not Valid");
+function stringFunction() {
+  const pinPattern=/^\d{4}$|^\d{6}$/;
+  const pinInputId=document.getElementById("pinId").value;
+  const resultId=document.getElementById("resultId");
+  
+  if(pinPattern.test(pinInputId)) {
+    resultId.value="True";
+    resultId.style.color="Green";
+  } else {
+    resultId.value="Not Valid";
+    resultId.style.color="Red";
+  }
 }
 
 //function to reset the fields
 function reset() {
-  pinInputId.value="";
+  document.getElementById("pinId").value="";
+  document.getElementById("resultId").value="";
 }
